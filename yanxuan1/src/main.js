@@ -6,6 +6,10 @@ import App from './App'
 //引入路由文件
 import router from './router'
 
+// 引入axios解决网络请求
+import axios from 'axios'
+Vue.prototype.axios = axios
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

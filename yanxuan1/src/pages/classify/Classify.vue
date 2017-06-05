@@ -19,9 +19,16 @@
 export default{
     name:'classify',
     data(){
-        return {
-            data:[],
-        }
+        return{
+           data:[] 
+        }  
+    },
+    created(){
+        this.axios.get('/static/ftlData.json').then(res=>{
+            console.log(res);
+        },err=>{
+            console.log(err);
+        })
     }
 }
 </script>
