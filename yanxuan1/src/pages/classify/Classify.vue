@@ -17,9 +17,11 @@
 
 <script type="text/javascript">
 export default{
-    name:'classify'
+    name:'classify',
     data(){
-        
+        return {
+            data:[],
+        }
     }
 }
 </script>
