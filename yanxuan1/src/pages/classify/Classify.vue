@@ -1,12 +1,26 @@
 <template>
     <div id="classify">
-        <h2>分类页测试</h2>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
     </div>
 </template>
 
 <script type="text/javascript">
 export default{
     name:'classify'
+    data(){
+        
+    }
 }
 </script>
 

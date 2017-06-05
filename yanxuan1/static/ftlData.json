@@ -1,0 +1,509 @@
+{
+    "categoryL1List": [
+        {
+            "bannerUrl": "http://yanxuan.nosdn.127.net/9a5dcf019f21754ffec58a11f0684b69.jpg",
+            "frontDesc": "",
+            "frontName": "",
+            "iconUrl": "",
+            "id": 1022001,
+            "imgUrl": "",
+            "level": null,
+            "name": "推荐",
+            "showIndex": 1,
+            "subCateList": [
+                {
+                    "bannerUrl": "http://yanxuan.nosdn.127.net/fbee769af73c0f63f6120eb27ff3ce96.png",
+                    "frontDesc": "",
+                    "frontName": "来自网易CEO丁磊的私物推荐",
+                    "iconUrl": "",
+                    "id": 1031001,
+                    "imgUrl": "",
+                    "level": null,
+                    "name": "丁磊推荐",
+                    "showIndex": 10,
+                    "subCateList": [
+                        
+                    ],
+                    "superCategoryId": 0,
+                    "type": 3,
+                    "wapBannerUrl": "http://yanxuan.nosdn.127.net/fbee769af73c0f63f6120eb27ff3ce96.png",
+                    "wapExpandPicTargetUrl": ""
+                },
+                {
+                    "bannerUrl": "http://yanxuan.nosdn.127.net/a4a14669ce1fa497aece9a20c669196e.png",
+                    "frontDesc": "",
+                    "frontName": "节日的仪式感，是爱情永恒的秘诀",
+                    "iconUrl": "",
+                    "id": 1028000,
+                    "imgUrl": "",
+                    "level": null,
+                    "name": "黑凤梨系列",
+                    "showIndex": 9,
+                    "subCateList": [
+                        
+                    ],
+                    "superCategoryId": 0,
+                    "type": 3,
+                    "wapBannerUrl": "http://yanxuan.nosdn.127.net/a4a14669ce1fa497aece9a20c669196e.png",
+                    "wapExpandPicTargetUrl": ""
+                },
+                {
+                    "bannerUrl": "http://yanxuan.nosdn.127.net/87fc01e5876482d521ecca13aea42653.png",
+                    "frontDesc": "",
+                    "frontName": "趣味粉彩，春季的家居新理念。",
+                    "iconUrl": "",
+                    "id": 1034002,
+                    "imgUrl": "",
+                    "level": null,
+                    "name": "趣味粉系列",
+                    "showIndex": 8,
+                    "subCateList": [
+                        
+                    ],
+                    "superCategoryId": 0,
+                    "type": 3,
+                    "wapBannerUrl": "http://yanxuan.nosdn.127.net/87fc01e5876482d521ecca13aea42653.png",
+                    "wapExpandPicTargetUrl": ""
+                },
+                {
+                    "bannerUrl": "http://yanxuan.nosdn.127.net/1fc6a2f96e5200de39595319e89c86a7.png",
+                    "frontDesc": "",
+                    "frontName": "限量礼盒限时发售",
+                    "iconUrl": "",
+                    "id": 1026000,
+                    "imgUrl": "",
+                    "level": null,
+                    "name": "蛋生金系列",
+                    "showIndex": 6,
+                    "subCateList": [
+                        
+                    ],
+                    "superCategoryId": 0,
+                    "type": 3,
+                    "wapBannerUrl": "http://yanxuan.nosdn.127.net/1fc6a2f96e5200de39595319e89c86a7.png",
+                    "wapExpandPicTargetUrl": ""
+                },
+                {
+                    "bannerUrl": "http://yanxuan.nosdn.127.net/cf4a950f63be398f7de4574baf1e7343.png",
+                    "frontDesc": "",
+                    "frontName": "给朋友的重要日子送上祝福",
+                    "iconUrl": "",
+                    "id": 1022006,
+                    "imgUrl": "",
+                    "level": null,
+                    "name": "送朋友",
+                    "showIndex": 5,
+                    "subCateList": [
+                        
+                    ],
+                    "superCategoryId": 0,
+                    "type": 3,
+                    "wapBannerUrl": "http://yanxuan.nosdn.127.net/cf4a950f63be398f7de4574baf1e7343.png",
+                    "wapExpandPicTargetUrl": ""
+                },
+                {
+                    "bannerUrl": "http://yanxuan.nosdn.127.net/db435de494ea203e6d218157ddd88b62.png",
+                    "frontDesc": "",
+                    "frontName": "呵护宝贝成长，爱是最好的礼物",
+                    "iconUrl": "",
+                    "id": 1022005,
+                    "imgUrl": "",
+                    "level": null,
+                    "name": "送宝贝",
+                    "showIndex": 4,
+                    "subCateList": [
+                        
+                    ],
+                    "superCategoryId": 0,
+                    "type": 3,
+                    "wapBannerUrl": "http://yanxuan.nosdn.127.net/db435de494ea203e6d218157ddd88b62.png",
+                    "wapExpandPicTargetUrl": ""
+                },
+                {
+                    "bannerUrl": "http://yanxuan.nosdn.127.net/0108081c97f92958578d3755a18959ca.png",
+                    "frontDesc": "",
+                    "frontName": "常回家看看，不要让孝心等的太久",
+                    "iconUrl": "",
+                    "id": 1022004,
+                    "imgUrl": "",
+                    "level": null,
+                    "name": "送爸妈",
+                    "showIndex": 3,
+                    "subCateList": [
+                        
+                    ],
+                    "superCategoryId": 0,
+                    "type": 3,
+                    "wapBannerUrl": "http://yanxuan.nosdn.127.net/0108081c97f92958578d3755a18959ca.png",
+                    "wapExpandPicTargetUrl": ""
+                },
+                {
+                    "bannerUrl": "http://yanxuan.nosdn.127.net/e93010a6dbe0a702a9b3288beab22d0a.png",
+                    "frontDesc": "",
+                    "frontName": "每天爱她多一点，给爱增添点仪式感。",
+                    "iconUrl": "",
+                    "id": 1022003,
+                    "imgUrl": "",
+                    "level": null,
+                    "name": "送给她",
+                    "showIndex": 2,
+                    "subCateList": [
+                        
+                    ],
+                    "superCategoryId": 0,
+                    "type": 3,
+                    "wapBannerUrl": "http://yanxuan.nosdn.127.net/e93010a6dbe0a702a9b3288beab22d0a.png",
+                    "wapExpandPicTargetUrl": ""
+                },
+                {
+                    "bannerUrl": "http://yanxuan.nosdn.127.net/4d765e20e019374e6f452edd58b226d6.png",
+                    "frontDesc": "",
+                    "frontName": "爱是他最好的盔甲，让他全心打拼无后顾之忧",
+                    "iconUrl": "",
+                    "id": 1022002,
+                    "imgUrl": "",
+                    "level": null,
+                    "name": "送给他",
+                    "showIndex": 1,
+                    "subCateList": [
+                        
+                    ],
+                    "superCategoryId": 0,
+                    "type": 3,
+                    "wapBannerUrl": "http://yanxuan.nosdn.127.net/4d765e20e019374e6f452edd58b226d6.png",
+                    "wapExpandPicTargetUrl": ""
+                }
+            ],
+            "superCategoryId": 0,
+            "type": 1,
+            "wapBannerUrl": "http://yanxuan.nosdn.127.net/9a5dcf019f21754ffec58a11f0684b69.jpg",
+            "wapExpandPicTargetUrl": "https://m.you.163.com/act/pub/Y2gC3drrBx.html"
+        },
+        {
+            "bannerUrl": "http://yanxuan.nosdn.127.net/761877bc4e2cf50d7c424a8a7e6378bf.jpg",
+            "frontDesc": "回家，放松身心",
+            "frontName": "回家，放松身心",
+            "iconUrl": "http://yanxuan.nosdn.127.net/a45c2c262a476fea0b9fc684fed91ef5.png",
+            "id": 1005000,
+            "imgUrl": "//nos.netease.com/yanxuan/f0d0e1a542e2095861b42bf789d948ce.jpg",
+            "level": "L1",
+            "name": "居家",
+            "showIndex": 1,
+            "subCateList": [
+                
+            ],
+            "superCategoryId": 0,
+            "type": 0,
+            "wapBannerUrl": "http://yanxuan.nosdn.127.net/e8bf0cf08cf7eda21606ab191762e35c.png",
+            "wapExpandPicTargetUrl": ""
+        },
+        {
+            "bannerUrl": "http://yanxuan.nosdn.127.net/b2640c3ed2061b94687ebcfd15b3ba09.jpg",
+            "frontDesc": "厨房",
+            "frontName": "爱，囿于厨房",
+            "iconUrl": "http://yanxuan.nosdn.127.net/ad8b00d084cb7d0958998edb5fee9c0a.png",
+            "id": 1005001,
+            "imgUrl": "//nos.netease.com/yanxuan/88855173a0cfcfd889ee6394a3259c4f.jpg",
+            "level": "L1",
+            "name": "餐厨",
+            "showIndex": 2,
+            "subCateList": [
+                
+            ],
+            "superCategoryId": 0,
+            "type": 0,
+            "wapBannerUrl": "http://yanxuan.nosdn.127.net/3708dbcb35ad5abf9e001500f73db615.png",
+            "wapExpandPicTargetUrl": ""
+        },
+        {
+            "bannerUrl": "http://yanxuan.nosdn.127.net/59b49865404a2ed98c17f1c4bf1899ce.png",
+            "frontDesc": "配角，亦是主角",
+            "frontName": "配角，亦是主角",
+            "iconUrl": "http://yanxuan.nosdn.127.net/11abb11c4cfdee59abfb6d16caca4c6a.png",
+            "id": 1008000,
+            "imgUrl": "//nos.netease.com/yanxuan/935f1ab7dcfeb4bbd4a5da9935161aaf.jpg",
+            "level": "L1",
+            "name": "配件",
+            "showIndex": 3,
+            "subCateList": [
+                
+            ],
+            "superCategoryId": 0,
+            "type": 0,
+            "wapBannerUrl": "http://yanxuan.nosdn.127.net/02f9a44d05c05c0dd439a5eb674570a2.png",
+            "wapExpandPicTargetUrl": ""
+        },
+        {
+            "bannerUrl": "http://yanxuan.nosdn.127.net/30c58298983e4a154b00543018ab3eb5.png",
+            "frontDesc": "贴身的，要亲肤",
+            "frontName": "贴身的，要亲肤",
+            "iconUrl": "http://yanxuan.nosdn.127.net/28a685c96f91584e7e4876f1397767db.png",
+            "id": 1010000,
+            "imgUrl": "//nos.netease.com/yanxuan/135113d6a43536b717063413fa24d69a.jpg",
+            "level": "L1",
+            "name": "服装",
+            "showIndex": 4,
+            "subCateList": [
+                
+            ],
+            "superCategoryId": 0,
+            "type": 0,
+            "wapBannerUrl": "http://yanxuan.nosdn.127.net/622c8d79292154017b0cbda97588a0d7.png",
+            "wapExpandPicTargetUrl": ""
+        },
+        {
+            "bannerUrl": "http://yanxuan.nosdn.127.net/2b3027f0f2b1acfdb4b56435cf92dba4.png",
+            "frontDesc": "亲肤之物，严选天然",
+            "frontName": "亲肤之物，严选天然",
+            "iconUrl": "http://yanxuan.nosdn.127.net/9fe068776b6b1fca13053d68e9c0a83f.png",
+            "id": 1013001,
+            "imgUrl": "//nos.netease.com/yanxuan/14bb4a29498a0f93a1ea001f26fea1dd.jpg",
+            "level": "L1",
+            "name": "洗护",
+            "showIndex": 5,
+            "subCateList": [
+                
+            ],
+            "superCategoryId": 0,
+            "type": 0,
+            "wapBannerUrl": "http://yanxuan.nosdn.127.net/1526ab0f5982722adbc8726f9f2a338c.png",
+            "wapExpandPicTargetUrl": ""
+        },
+        {
+            "bannerUrl": "http://yanxuan.nosdn.127.net/25651230d328b48f878d3a488a7f88b1.jpg",
+            "frontDesc": "爱，从心开始",
+            "frontName": "爱，从心开始",
+            "iconUrl": "http://yanxuan.nosdn.127.net/1ba9967b8de1ac50fad21774a4494f5d.png",
+            "id": 1011000,
+            "imgUrl": "//nos.netease.com/yanxuan/8ab3c73fe90951a942e8b06d848f8743.jpg",
+            "level": "L1",
+            "name": "婴童",
+            "showIndex": 6,
+            "subCateList": [
+                
+            ],
+            "superCategoryId": 0,
+            "type": 0,
+            "wapBannerUrl": "http://yanxuan.nosdn.127.net/9cc0b3e0d5a4f4a22134c170f10b70f2.png",
+            "wapExpandPicTargetUrl": ""
+        },
+        {
+            "bannerUrl": "http://yanxuan.nosdn.127.net/0e23487e6dc9dde0278776071b2a4fb7.png",
+            "frontDesc": "解忧，每个烦恼",
+            "frontName": "解忧，每个烦恼",
+            "iconUrl": "http://yanxuan.nosdn.127.net/c2a3d6349e72c35931fe3b5bcd0966be.png",
+            "id": 1012000,
+            "imgUrl": "//nos.netease.com/yanxuan/a0c91ae573079830743dec6ee08f5841.jpg",
+            "level": "L1",
+            "name": "杂货",
+            "showIndex": 7,
+            "subCateList": [
+                
+            ],
+            "superCategoryId": 0,
+            "type": 0,
+            "wapBannerUrl": "http://yanxuan.nosdn.127.net/547853361d29a37282f377b9a755dd37.png",
+            "wapExpandPicTargetUrl": ""
+        },
+        {
+            "bannerUrl": "http://yanxuan.nosdn.127.net/e71c18948044771a7ebd4c9cc551ce8a.png",
+            "frontDesc": "好吃，高颜值美食",
+            "frontName": "好吃，高颜值美食",
+            "iconUrl": "http://yanxuan.nosdn.127.net/c9280327a3fd2374c000f6bf52dff6eb.png",
+            "id": 1005002,
+            "imgUrl": "//nos.netease.com/yanxuan/9a29ef4f41c305a12e1459f12abd290f.jpg",
+            "level": "L1",
+            "name": "饮食",
+            "showIndex": 8,
+            "subCateList": [
+                
+            ],
+            "superCategoryId": 0,
+            "type": 0,
+            "wapBannerUrl": "http://yanxuan.nosdn.127.net/fb670ff3511182833e5b035275e4ac09.png",
+            "wapExpandPicTargetUrl": ""
+        },
+        {
+            "bannerUrl": "http://yanxuan.nosdn.127.net/54e55e9d8a74c2cef5d624f99860ccdb.png",
+            "frontDesc": "爱好，点缀生活",
+            "frontName": "周边精品，共享热爱",
+            "iconUrl": "http://yanxuan.nosdn.127.net/7093cfecb9dde1dd3eaf459623df4071.png",
+            "id": 1019000,
+            "imgUrl": "//nos.netease.com/yanxuan/72de912b6350b33ecf88a27498840e62.jpg",
+            "level": "L1",
+            "name": "志趣",
+            "showIndex": 9,
+            "subCateList": [
+                
+            ],
+            "superCategoryId": 0,
+            "type": 0,
+            "wapBannerUrl": "http://yanxuan.nosdn.127.net/1706e24a5e605870ba3b37ff5f49aa18.png",
+            "wapExpandPicTargetUrl": ""
+        }
+    ],
+    "categoryL2List": [
+        {
+            "bannerUrl": "",
+            "frontDesc": "夏凉床品，舒适一夏",
+            "frontName": "夏凉床品，舒适一夏",
+            "iconUrl": "",
+            "id": 1036000,
+            "imgUrl": "",
+            "level": "L2",
+            "name": "夏凉",
+            "showIndex": 1,
+            "subCateList": [
+                
+            ],
+            "superCategoryId": 1005000,
+            "type": 0,
+            "wapBannerUrl": "http://yanxuan.nosdn.127.net/bd17c985bacb9b9ab1ab6e9d66ee343c.png",
+            "wapExpandPicTargetUrl": ""
+        },
+        {
+            "bannerUrl": "",
+            "frontDesc": "选用优质材料，确保好芯",
+            "frontName": "守护你的睡眠时光",
+            "iconUrl": "",
+            "id": 1008008,
+            "imgUrl": "",
+            "level": "L2",
+            "name": "被枕",
+            "showIndex": 2,
+            "subCateList": [
+                
+            ],
+            "superCategoryId": 1005000,
+            "type": 0,
+            "wapBannerUrl": "http://yanxuan.nosdn.127.net/b43ef7cececebe6292d2f7f590522e05.png",
+            "wapExpandPicTargetUrl": ""
+        },
+        {
+            "bannerUrl": "",
+            "frontDesc": "严格用料，亲肤舒适",
+            "frontName": "MUJI等品牌制造商出品",
+            "iconUrl": "",
+            "id": 1008009,
+            "imgUrl": "",
+            "level": "L2",
+            "name": "床品件套",
+            "showIndex": 3,
+            "subCateList": [
+                
+            ],
+            "superCategoryId": 1005000,
+            "type": 0,
+            "wapBannerUrl": "http://yanxuan.nosdn.127.net/81f671bd36bce05d5f57827e5c88dd1b.png",
+            "wapExpandPicTargetUrl": ""
+        },
+        {
+            "bannerUrl": "",
+            "frontDesc": "换个软装，换个家",
+            "frontName": "各种风格软装装点你的家",
+            "iconUrl": "",
+            "id": 1008002,
+            "imgUrl": "",
+            "level": "L2",
+            "name": "布艺软装",
+            "showIndex": 4,
+            "subCateList": [
+                
+            ],
+            "superCategoryId": 1005000,
+            "type": 0,
+            "wapBannerUrl": "http://yanxuan.nosdn.127.net/2e2fb4f2856a021bbcd1b4c8400f2b06.png",
+            "wapExpandPicTargetUrl": ""
+        },
+        {
+            "bannerUrl": "",
+            "frontDesc": "一级原木，严苛工艺",
+            "frontName": "大师级工艺",
+            "iconUrl": "",
+            "id": 1015000,
+            "imgUrl": "",
+            "level": "L2",
+            "name": "家具",
+            "showIndex": 5,
+            "subCateList": [
+                
+            ],
+            "superCategoryId": 1005000,
+            "type": 0,
+            "wapBannerUrl": "http://yanxuan.nosdn.127.net/d5d41841136182bf49c1f99f5c452dd6.png",
+            "wapExpandPicTargetUrl": ""
+        },
+        {
+            "bannerUrl": "",
+            "frontDesc": "极简主义，贴近生活的设计",
+            "frontName": "一盏灯，温暖一个家",
+            "iconUrl": "",
+            "id": 1008016,
+            "imgUrl": "",
+            "level": "L2",
+            "name": "灯具",
+            "showIndex": 6,
+            "subCateList": [
+                
+            ],
+            "superCategoryId": 1005000,
+            "type": 0,
+            "wapBannerUrl": "http://yanxuan.nosdn.127.net/f702dc399d14d4e1509d5ed6e57acd19.png",
+            "wapExpandPicTargetUrl": ""
+        },
+        {
+            "bannerUrl": "",
+            "frontDesc": "点缀美好生活，品质在于细节",
+            "frontName": "装饰你的家",
+            "iconUrl": "",
+            "id": 1011004,
+            "imgUrl": "",
+            "level": "L2",
+            "name": "家饰",
+            "showIndex": 7,
+            "subCateList": [
+                
+            ],
+            "superCategoryId": 1005000,
+            "type": 0,
+            "wapBannerUrl": "http://yanxuan.nosdn.127.net/79275db76b5865e6167b0fbd141f2d7e.png",
+            "wapExpandPicTargetUrl": ""
+        },
+        {
+            "bannerUrl": "",
+            "frontDesc": "出口品质，严选贴合萌宠生活习惯用品。",
+            "frontName": "抑菌除味，打造宠物舒适空间",
+            "iconUrl": "",
+            "id": 1017000,
+            "imgUrl": "",
+            "level": "L2",
+            "name": "宠物",
+            "showIndex": 8,
+            "subCateList": [
+                
+            ],
+            "superCategoryId": 1005000,
+            "type": 0,
+            "wapBannerUrl": "http://yanxuan.nosdn.127.net/dae4d6e89ab8a0cd3e8da026e4660137.png",
+            "wapExpandPicTargetUrl": ""
+        }
+    ],
+    "currentCategory": {
+        "bannerUrl": "http://yanxuan.nosdn.127.net/761877bc4e2cf50d7c424a8a7e6378bf.jpg",
+        "frontDesc": "回家，放松身心",
+        "frontName": "回家，放松身心",
+        "iconUrl": "http://yanxuan.nosdn.127.net/a45c2c262a476fea0b9fc684fed91ef5.png",
+        "id": 1005000,
+        "imgUrl": "//nos.netease.com/yanxuan/f0d0e1a542e2095861b42bf789d948ce.jpg",
+        "level": "L1",
+        "name": "居家",
+        "showIndex": 1,
+        "subCateList": [
+            
+        ],
+        "superCategoryId": 0,
+        "type": 0,
+        "wapBannerUrl": "http://yanxuan.nosdn.127.net/e8bf0cf08cf7eda21606ab191762e35c.png",
+        "wapExpandPicTargetUrl": ""
+    }
+}
