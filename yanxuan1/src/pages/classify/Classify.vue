@@ -1,6 +1,18 @@
 <template>
-    <h2>分类页测试</h2>
-    <h1>wwwwwwwwwwwww</h1>
+    <div id="classify">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
 </template>
 
 <script type="text/javascript">
