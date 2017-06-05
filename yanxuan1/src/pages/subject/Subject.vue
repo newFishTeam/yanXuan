@@ -1,5 +1,7 @@
 <template>
-    <h2>主题页测试</h2>
+    <div id="subject">
+        <h2>主题页测试12</h2>
+    </div>
 </template>
 
 <script type="text/javascript">
