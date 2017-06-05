@@ -1,5 +1,7 @@
 <template>
-    <h2>购物车页测试</h2>
+    <div id="cart">
+        <h2>购物车页测试</h2>
+    </div>
 </template>
 
 <script type="text/javascript">
