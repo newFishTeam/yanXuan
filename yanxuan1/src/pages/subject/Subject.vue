@@ -1,6 +1,6 @@
 <template>
     <div id="subject">
-        <h2>主题页测试</h2>
+        <h2>主题页测试1</h2>
     </div>
 </template>
 
