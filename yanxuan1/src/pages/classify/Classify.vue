@@ -1,11 +1,25 @@
 <template>
     <div id="classify">
-        <ul>
-            <li v-for="(item,i) in data.categoryL1List">{{ item.name }}</li>
+        <p class="firstP"></p>
+
+        <ul class="leftUl">
+            <li v-for="(item,i) in data" @click="changeList()">{{ item.name }}</li>
         </ul>
-        <div v-for="(item,i) in data.categoryL1List">   
-            <img :src="item.bannerUrl" alt="">
-        </div>
+
+        <div class="rightDiv" v-for="(item,i) in data" ref="rightList">
+
+                <img :src="item.bannerUrl" alt="" > 
+
+                <div class="rightDiv2" >
+                    <p>推荐分类</p>
+                    <ul> 
+                        <li v-for="(item2,i) in item.subCateList">
+                            <img :src="item2.wapBannerUrl" alt="">
+                            <p>{{ item2.name }}</p>
+                        </li>
+                    </ul>
+                </div> 
+        </div>       
     </div>
 </template>
 
@@ -14,52 +28,74 @@ export default{
     name:'classify',
     data(){
         return{
-           data:[] 
+            data:{}
         }  
     },
     created(){
-        this.axios.get('/static/classify/ftlData.json').then(res=>{
-            this.data = res.data;
-            console.log(this.data.categoryL1List[1].name);
+        this.axios.get('/static/classify/global.json').then(res => {
+            console.log(res);
+            this.data = res.data.cateList;
         },err=>{
             console.log(err);
         })
+    },
+    methods:{
+        changeList(){
+            console.log(this.i);
+            console.log(this.$refs.rightList);
+        }
     }
 }
 </script>
 
-<style >
+<style lang="less" scoped>
     #classify{
         width:100%;
         font-family: PingFangSC-Light,helvetica,'Heiti SC';
         font-size: .173rem;
         border-size:border-box;
     }
-    #classify ul{
+    .firstP{
+        width:0;
+        height:0;
+        border:0.013rem solid #ccc;
+    }
+    .leftUl{
         width:2.133rem;
         height: 13.84rem;
         overflow-y: scroll;
         position: fixed;
         top:0;
         left:0;
-        background-color: pink;
+        border-right:0.013rem solid #ccc;
     }
-    #classify ul li{
+    .leftUl li{
         width:2.133rem;
         height: 0.667rem;
         line-height: 0.667rem;
         text-align: center;
-        margin:0.22rem 0;
-        border-left:0.027rem solid #ab2b2b;
+        margin:1rem 0;
+        border-left:0.067rem solid #fff;
     }
-    #classify ul li:first-child{
-        margin-top:0.5rem;
+    .leftUl li:first-child{
+        margin-top:0.7rem;
     }
-    #classify div{
+    .active{
+        font-size:0.25rem;
+        color:#ab2b2b;
+        border-left:0.067rem solid #ab2b2b;
+    }
+    .rightDiv{
         float:right;
+        width:7.84rem; 
+        text-align:center;
     }
-    #classify div img{
+    .rightDiv img{
         width:7.04rem;
         height:2.56rem;
+    }
+    .rightDiv2 ul li img{
+        width:1.92rem;
+        height:1.92rem;
     }
 </style>
