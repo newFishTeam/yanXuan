@@ -53,3 +53,10 @@ a:hover {
     display: block;
     clear: both;
 }
+
+/*多余...显示*/
+.ellipsis{
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
