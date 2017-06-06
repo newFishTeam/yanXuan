@@ -6,7 +6,20 @@
 
 <script type="text/javascript">
 export default{
-    name:'mine'
+    name:'mine',
+    data(){
+        return{
+           data:[] 
+        }  
+    },
+    created(){
+        this.axios.get('/static/ftlData.json').then(res=>{
+            this.data = res.data;
+            console.log(this.data.categoryL1List[1].name);
+        },err=>{
+            console.log(err);
+        })
+    }
 }
 </script>
 
