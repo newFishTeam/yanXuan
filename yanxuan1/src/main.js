@@ -6,9 +6,11 @@ import App from './App'
 //引入路由文件
 import router from './router'
 
-//引入axios 解决网络请求问题
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+Vue.use(VueAwesomeSwiper) //记得不要忘记这句
+
+// 引入axios解决网络请求
 import axios from 'axios'
-//添加到原型上，保证任何地方都可以访问，因为axios不是Vue组件，所以不能使用Vue.use();
 Vue.prototype.axios = axios
 
 

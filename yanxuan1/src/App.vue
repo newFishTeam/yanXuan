@@ -46,7 +46,9 @@ export default {
         left:0;
         right:0;
         top:0;
-        bottom:1.30667rem;
+        bottom:1.30667rem; 
+        overflow-x:hidden;
+        overflow-y:outo;
 
     }
     .index_footer{
@@ -71,7 +73,7 @@ export default {
                 background-image:url(../static/img/home/hxm.png);
                 background-repeat:no-repeat;
                 background-size: .53333rem 6.53333rem;
-                verticl-align:middle;
+                vertical-align:middle;
 
             }
             .idf_ic_sy{
