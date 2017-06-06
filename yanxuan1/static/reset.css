@@ -10,9 +10,14 @@ fieldset, lengend, button, input, textarea, /*表单元素*/
 th, td, /*表格元素*/
 pre /*文本格式元素*/ {
     margin: 0;
+    box-sizing:border-box;
 }
-
-
+html,body{
+    height: 100%;
+}
+body{
+    font-size: 24px;
+}
 /*清除内边距*/
 ul, ol, menu {
     padding: 0;
