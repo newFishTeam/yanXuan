@@ -42,7 +42,7 @@ export default{
         position: fixed;
         top:0;
         left:0;
-        /*background-color: pink;*/
+        background-color: pink;
     }
     #classify ul li{
         width:2.133rem;
