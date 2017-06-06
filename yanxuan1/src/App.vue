@@ -4,7 +4,7 @@
 
         </router-view>
         <footer class="index_footer">
-            <router-link to='/home'>
+            <router-link to='/home' class="active">
                 <i class="idf_icon idf_ic_sy"></i>
                 <span class="inf_font">首页</span>
             </router-link>
@@ -46,7 +46,7 @@ export default {
         left:0;
         right:0;
         top:0;
-        bottom:0.65rem;
+        bottom:1.30667rem;
 
     }
     .index_footer{
@@ -63,21 +63,38 @@ export default {
         justify-content:space-around;
         a{
             color:#666;
+            text-align:center;
             .idf_icon{
                 display:inline-block;
                 height:.53333rem;
                 width:.53333rem;
                 background-image:url(../static/img/home/hxm.png);
                 background-repeat:no-repeat;
-                background-size: .53333rem .53333rem;
+                background-size: .53333rem 6.53333rem;
+                verticl-align:middle;
 
             }
             .idf_ic_sy{
-                 background-position:0 -1.66667rem;
+                 background-position:0 -2.66667rem;
+            }
+            .idf_ic_zt{
+                 background-position:0 -4.66667rem;
+            }
+            .idf_ic_fl{
+                 background-position:0 -2rem;
+            }
+            .idf_ic_gwc{
+                 background-position:0 -.66667rem;
+            }
+            .idf_ic_wd{
+                 background-position:0 -6rem;
             }
             .inf_font{
                 display:block;
             }
+        }
+        .active{
+            color:#b4282d;
         }
 
     }
