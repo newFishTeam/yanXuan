@@ -10,6 +10,7 @@
         "level": null,
         "name": "推荐",
         "showIndex": 1,
+        "myIndex": 0,
         "subCateList": [
             {
                 "bannerUrl": "http://yanxuan.nosdn.127.net/fbee769af73c0f63f6120eb27ff3ce96.png",
@@ -189,6 +190,7 @@
         "level": null,
         "name": "居家",
         "showIndex": 0,
+        "myIndex": 1,
         "subCateList": [
             {
                 "bannerUrl": "",
@@ -386,6 +388,7 @@
         "level": null,
         "name": "餐厨",
         "showIndex": 0,
+        "myIndex": 2,
         "subCateList": [
             {
                 "bannerUrl": "",
@@ -565,6 +568,7 @@
         "level": null,
         "name": "配件",
         "showIndex": 0,
+        "myIndex": 3,
         "subCateList": [
             {
                 "bannerUrl": "",
@@ -762,6 +766,7 @@
         "level": null,
         "name": "服装",
         "showIndex": 0,
+        "myIndex": 4,
         "subCateList": [
             {
                 "bannerUrl": "",
@@ -995,6 +1000,7 @@
         "level": null,
         "name": "洗护",
         "showIndex": 0,
+        "myIndex": 5,
         "subCateList": [
             {
                 "bannerUrl": "",
@@ -1210,6 +1216,7 @@
         "level": null,
         "name": "婴童",
         "showIndex": 0,
+        "myIndex": 6,
         "subCateList": [
             {
                 "bannerUrl": "",
@@ -1389,6 +1396,7 @@
         "level": null,
         "name": "杂货",
         "showIndex": 0,
+        "myIndex": 7,
         "subCateList": [
             {
                 "bannerUrl": "",
@@ -1586,6 +1594,7 @@
         "level": null,
         "name": "饮食",
         "showIndex": 0,
+        "myIndex": 8,
         "subCateList": [
             {
                 "bannerUrl": "",
@@ -1783,6 +1792,7 @@
         "level": null,
         "name": "志趣",
         "showIndex": 0,
+        "myIndex": 9,
         "subCateList": [
             {
                 "bannerUrl": "",

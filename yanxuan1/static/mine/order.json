@@ -1,0 +1,83 @@
+{ 
+    "orderData":[        
+    {
+        "id": 0,
+        "icon": "ulist",
+        "txt": "我的订单",
+        "targetUrl": "/order/myList"
+    },
+    {
+        "id": 1,
+        "icon": "upin",
+        "txt": "周六一起拼",
+        "targetUrl": "/pin/item/list"
+    },
+    {
+        "id": 2,
+        "icon": "uaftersale",
+        "txt": "售后服务",
+        "targetUrl": "/return/service"
+    },
+    {
+        "id": 3,
+        "icon": "ulead",
+        "txt": "邀请返利",
+        "targetUrl": "/lead",
+        "isHidden": "this.props.isNewUser"
+    },
+    {
+        "id": 4,
+        "icon": "ucoupon",
+        "txt": "优惠券",
+        "targetUrl": "/coupon"
+    },
+    {
+        "id": 5,
+        "icon": "upreemption",
+        "txt": "优先购",
+        "targetUrl": "/preemption/index"
+    },
+    {
+        "id": 6,
+        "icon": "ugiftcard",
+        "txt": "礼品卡",
+        "targetUrl": "/giftCard/list"
+    },
+    {
+        "id": 7,
+        "icon": "umembershipBenefits",
+        "txt": "会员福利",
+        "targetUrl": "/membership/index"
+    },
+    {
+        "id": 8,
+        "icon": "uaddress",
+        "txt": "地址管理",
+        "targetUrl": "/address/list"
+    },
+    {
+        "id": 9,
+        "icon": "usecurity",
+        "txt": "帐号安全",
+        "targetUrl": "/user/securityCenter"
+    },
+    {
+        "id": 10,
+        "icon": "ukefu",
+        "txt": "联系客服",
+        "targetUrl": "javascript:void(0);"
+    },
+    {
+        "id": 11,
+        "icon": "uhelp",
+        "txt": "帮助中心",
+        "targetUrl": "/help"
+    },
+    {
+        "id": 12,
+        "icon": "ufeedback",
+        "txt": "意见反馈",
+        "targetUrl": "/feedback"
+    }
+]
+}

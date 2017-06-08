@@ -3,23 +3,28 @@
         <p class="firstP"></p>
 
         <ul class="leftUl">
-            <li v-for="(item,i) in data" @click="changeList()">{{ item.name }}</li>
+            <li v-for="(item,i) in dataAll" @click="changeList(i)" ref="leftLi" v-bind:class="{'active':i ==currentIndex}">{{ item.name }}</li>
         </ul>
 
-        <div class="rightDiv" v-for="(item,i) in data" ref="rightList">
+        <div class="rightDiv">
 
-                <img :src="item.bannerUrl" alt="" > 
+                <img :src="data.bannerUrl" alt="" > 
 
                 <div class="rightDiv2" >
                     <p>推荐分类</p>
                     <ul> 
-                        <li v-for="(item2,i) in item.subCateList">
-                            <img :src="item2.wapBannerUrl" alt="">
-                            <p>{{ item2.name }}</p>
+                        <li v-for="(item2,i) in data.subCateList">
+                            <router-link :to="'/classify2/' + data.myIndex + item2.id">
+                                <img :src="item2.wapBannerUrl" alt="">
+                                <p>{{ item2.name }}</p>
+                            </router-link>
                         </li>
+
                     </ul>
+
                 </div> 
-        </div>       
+        </div>
+        <router-view class="abc"></router-view>       
     </div>
 </template>
 
@@ -28,22 +33,27 @@ export default{
     name:'classify',
     data(){
         return{
-            data:{}
+            dataAll:[],
+            data:[],
+            currentIndex : 0
         }  
     },
     created(){
         this.axios.get('/static/classify/global.json').then(res => {
-            console.log(res);
-            this.data = res.data.cateList;
+            this.dataAll = res.data.cateList;
+            this.data = res.data.cateList[0];
+
+            // console.log(this.dataAll);
         },err=>{
             console.log(err);
         })
     },
+    
     methods:{
-        changeList(){
-            console.log(this.i);
-            console.log(this.$refs.rightList);
-        }
+        changeList(i){      
+            this.currentIndex = i;
+            this.data = this.dataAll[i];
+        },
     }
 }
 </script>
@@ -55,6 +65,14 @@ export default{
         font-size: .173rem;
         border-size:border-box;
     }
+    .abc{
+        position:fixed;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        background:white;
+    }
     .firstP{
         width:0;
         height:0;
@@ -62,7 +80,7 @@ export default{
     }
     .leftUl{
         width:2.133rem;
-        height: 13.84rem;
+        height: 16.43rem;
         overflow-y: scroll;
         position: fixed;
         top:0;
@@ -71,19 +89,19 @@ export default{
     }
     .leftUl li{
         width:2.133rem;
-        height: 0.667rem;
-        line-height: 0.667rem;
+        height: 0.7rem;
+        line-height: 0.7rem;
         text-align: center;
-        margin:1rem 0;
-        border-left:0.067rem solid #fff;
+        margin:0.8rem 0;
+
     }
     .leftUl li:first-child{
-        margin-top:0.7rem;
+        margin-top:0.9rem;
     }
     .active{
-        font-size:0.25rem;
+        font-size:0.5rem;
         color:#ab2b2b;
-        border-left:0.067rem solid #ab2b2b;
+        border-left:0.1rem solid #ab2b2b;
     }
     .rightDiv{
         float:right;
@@ -93,6 +111,15 @@ export default{
     .rightDiv img{
         width:7.04rem;
         height:2.56rem;
+    }
+    .rightDiv2{
+        width:7.04rem;
+        height:2.56rem; 
+        padding:0.5rem; 
+    }
+    .rightDiv2 ul li{
+        float:left;
+        margin:0.2rem;
     }
     .rightDiv2 ul li img{
         width:1.92rem;
