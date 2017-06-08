@@ -7,9 +7,10 @@
 <script type="text/javascript">
     export default{
         name:'cart'
+       
     }
 </script>
 
 <style>
-
+  
 </style>
