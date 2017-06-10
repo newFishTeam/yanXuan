@@ -6,7 +6,9 @@
 
 <script type="text/javascript">
     export default{
-        name:'cart'
+        name:'cart',
+        created () {
+        }
        
     }
 </script>

@@ -11,6 +11,7 @@ import Mine from '../pages/mine/Mine'
 import Classify from '../pages/classify/Classify'
 import Subject from '../pages/subject/Subject'
 import Classify2 from '../pages/classify/classify2/Classify2'
+import Detail from '../components/Detail'
 
 //定义路由规则
 const routes = [
@@ -22,6 +23,7 @@ const routes = [
         {path: '/classify2/:id:idMini' , component: Classify2 }
     ]},
     { path: '/subject' , component: Subject },
+    { path: '/detail/:product:urlimg' , component: Detail }
 ]
 
 export default new VueRouter({

@@ -49,11 +49,11 @@
     		}
     	},
     	created(){
-    		console.log('---------------');
-    		console.log(this.b);
-    		console.log(this.ctData);
-    		console.log(this.ctmData);
-    		console.log('---------------');
+    		// console.log('---------------');
+    		// console.log(this.b);
+    		// console.log(this.ctData);
+    		// console.log(this.ctmData);
+    		// console.log('---------------');
     	}
     }
 </script>

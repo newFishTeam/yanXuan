@@ -83,7 +83,7 @@
     }
     .topHeader{
         width:100%;
-        height:1.467rem;
+        height:1.467rem;                            
         position:absolute;
         top:0;
         left:0;

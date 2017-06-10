@@ -47,12 +47,12 @@ export default {
         left:0;
         right:0;
         top:0;
-        bottom:1.30667rem; 
+        bottom:0; 
+        padding:0 0 1.30667rem 0;
         overflow-x:hidden;
         overflow-y:outo;
 
     }
-
     .index_footer{
         position: absolute;
         left: 0;

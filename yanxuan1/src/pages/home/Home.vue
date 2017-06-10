@@ -93,7 +93,7 @@
 						<p class="hmc_title">{{ hmci.name }}好物 </p>
 						<ol class="clear">
 							<li v-for="hmcii in hmci.itemList" class="hmci_sml">
-								<div class="hmc_img">
+								<div class="hmc_img" @click="showDetail(hmcii)">
 									<img :src="hmcii.listPicUrl">
 									<p class="hmc_desc ellipsis">{{ hmcii.simpleDesc }}</p>
 									<div v-if="!hmcii.colorNum == hmcii.productPlace">
@@ -139,6 +139,7 @@
         }, 
         data () {
         	return {
+        		sendItem:{},
         		mainShow:true,
         		cateShow:false,
         		navid:0,
@@ -162,6 +163,16 @@
         		this.naveiData = this.navesData[ctid].subCateList;
         		this.mainShow = false;
         		this.cateShow = true;
+        	},
+        	showDetail (item) {
+        		//listPicUrl
+        		let {listPicUrl,productPlace,promTag,name,retailPrice}=item;
+        		this.sendItem = {listPicUrl,productPlace,promTag,name,retailPrice};
+				// console.log(this.sendItem);
+        		// JSON.stringify(item)
+        		this.$router.push('/detail/'+JSON.stringify(this.sendItem));
+        		console.log(JSON.stringify(this.sendItem));
+        		
         	}
         },
         watch:{
@@ -199,7 +210,7 @@
         		//res.data.flashSaleIndexVO; 同专题精选
         		//res.data.cateList;分类
         		
-        		console.log(res.data);
+        		//console.log(res.data);
         		this.swiperData = res.data.focusList;
         		this.policyData = res.data.policyDescList;
         		this.popularData = res.data.popularItemList;
@@ -211,8 +222,8 @@
         	});
 
         	//顶部菜单数据
-        	this.axios.get('../static/home/homeCateList.json').then(res => {console.log("---------------");	
-        		console.log(res.data);
+        	this.axios.get('../static/home/homeCateList.json').then(res => {//console.log("---------------");	
+        		//console.log(res.data);
         		this.navesData = res.data
 
         	}, err => {
@@ -230,7 +241,8 @@
 	@color_fff:#fff;
      
 	#home{
-		
+		.pd_detail{
+		}
 		background:#F4F4F4;
 		font-size:.32rem;
 		img{
