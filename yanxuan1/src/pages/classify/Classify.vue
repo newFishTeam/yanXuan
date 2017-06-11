@@ -1,7 +1,12 @@
 <template>
     <div id="classify">
-        <p class="firstP"></p>
+        <div class="sousuo">
+           <search></search> 
+        </div>
+        <div class="sousuo2"></div>
 
+        <p class="line"></p>
+        
         <ul class="leftUl">
             <li v-for="(item,i) in dataAll" @click="changeList(i)" ref="leftLi" v-bind:class="{'active':i ==currentIndex}">{{ item.name }}</li>
         </ul>
@@ -29,8 +34,14 @@
 </template>
 
 <script type="text/javascript">
+
+import search from '../../components/Search.vue'
+
 export default{
     name:'classify',
+    components:{
+        search
+    },
     data(){
         return{
             dataAll:[],
@@ -83,7 +94,7 @@ export default{
         height: 16.43rem;
         overflow-y: scroll;
         position: fixed;
-        top:0;
+        top:1.173rem;
         left:0;
         border-right:0.013rem solid #ccc;
     }
@@ -107,6 +118,7 @@ export default{
         float:right;
         width:7.84rem; 
         text-align:center;
+        margin-top:0.3rem;
     }
     .rightDiv img{
         width:7.04rem;
@@ -124,5 +136,17 @@ export default{
     .rightDiv2 ul li img{
         width:1.92rem;
         height:1.92rem;
+    }
+    .sousuo{
+        width:100%;
+        height:1.173rem;
+        text-align:center;
+        padding:0.2rem 0;
+    }
+    .line{
+        width:100%;
+        height:0.03rem;
+        background-color:#ccc;
+        margin-top:-0.4rem;
     }
 </style>
