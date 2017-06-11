@@ -2,21 +2,27 @@
     <div id="classify2"> 
         <div class="topHeader">
             <div class="myHeader">
-                <p @click="closeBtn()"><img src="static/classify/icon.png" alt=""></p>
+                <p @click="closeBtn()"><img src="static/classify/icon.png" alt="" v-bind:class="{'changes':flag}"></p>
                 <p><img src="static/classify/icon.png" alt=""></p>
-                <p><img src="static/classify/icon.png" alt=""></p>
-                <p><img src="static/classify/icon.png" alt=""></p>
+                    <p><img src="static/classify/icon.png" alt=""></p>
+                <router-link to="/cart">
+                    <p><img src="static/classify/icon.png" alt="" ></p>
+                </router-link>
             </div>
-            <div></div>
+            <router-view></router-view>
+            <div class="tabHidden">
+                
+            </div>
         </div>
-        
+        <div class="empty"></div>
         <ul class="tabber">
-            <li v-for="(item,i) in cateList.subCateList" @click="changeTab(i)">{{ item.name }}</li>
+            <li v-for="(item,i) in cateList.subCateList" @click="changeTab(i)" v-bind:class="{'active':i==currentIndex}">{{ item.name }}</li>
         </ul>
         <div class="myList">
             <p class="line"></p>
             <!-- <p class="frontN">{{ listName.category.frontName }}</p> -->
-            <ul>        
+            <p class="frontN"></p>
+            <ul class="myUl">        
                 <li v-for="item in listName.itemList">
                     <div>
                         <img :src="item.listPicUrl" alt="">
@@ -24,7 +30,7 @@
                     </div>
                     <div>
                         <p><span v-if="item.itemTagList!=''">{{item.itemTaglist }}</span></p>
-                        <p>{{ item.name }}</p>
+                        <p class="itemName">{{ item.name }}</p>
                         <span>￥{{item.retailPrice}}</span>
                     </div>
                 </li>
@@ -43,7 +49,9 @@
             // categoryL2List:[],
             cateList:[],
             abc: this.$route.params.id,
-            abcMini: this.$route.params.idMini
+            abcMini: this.$route.params.idMini,
+            flag:false,
+            currentIndex:0
         }  
     },
     created(){
@@ -67,9 +75,11 @@
     methods:{
         changeTab(i){
             this.listName = this.data.listName[i];
+            this.currentIndex = i;
         },
         closeBtn(){
-            // this.$refs.btn
+            this.flag = !this.flag;
+
         }
     }
     }
@@ -77,17 +87,32 @@
 
 <style lang="less" scoped>
     #classify2{
-        width:100%;
-        height:100%;
+        position:fixed;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        z-index:100;
         overflow-y:scroll;
     }
     .topHeader{
         width:100%;
         height:1.467rem;
-        position:absolute;
+        position:fixed;
         top:0;
         left:0;
         right:0;
+        z-index:101;
+    }
+    .empty{
+        width:100%;
+        height:1.467rem;
+    }
+    .tabHidden{
+        position:absolute;
+        width:100%;
+        height:1.467rem;
+        background:#f4f4f4;
     }
     .frontN{
         width:100%;
@@ -115,8 +140,7 @@
         position:relative;
         width:2.29333rem ;
         height:9.28rem;
-    }
-    
+    }   
     .myHeader p:nth-child(1){
         width: .66667rem;
         height: .66667rem;
@@ -126,11 +150,8 @@
     .myHeader p:nth-child(1) img{
         top:-3.4rem;    
     }
-    .active{
+    .myHeader p:nth-child(1) .changes{
         top:-4.2rem;
-    }
-    .normal{
-        top:-3.4rem;
     }
     .myHeader p:nth-child(2){
         width: 2.29333rem;
@@ -157,8 +178,7 @@
     }
     .myHeader p:last-child img{
         top:-0.1rem;
-    }
-    
+    }   
     .myHeader{
         width:100%;
         height:1.173rem;
@@ -166,6 +186,10 @@
         border:0.013rem solid #ccc;
         border-left:none;
         border-right:none;
+    }
+    .myUl{
+        width:100%;
+        padding-left:0.43rem;
     }
     .tabber{
         overflow-x:scroll;
@@ -179,7 +203,6 @@
         font-size:0.35rem;
         height:0.8rem;
         line-height:0.8rem;
-        border-bottom:0.1rem solid white;
         padding:0 0.4rem;
         text-align:center;
     }
@@ -205,18 +228,16 @@
         overflow: hidden;
         background:white;
         height:6rem;
-       
     }
     .myList ul li:first-child{
     }
     .myList ul li div:first-child{
         position: relative; 
-        width:4rem;
-        margin:0 0 0 0.5rem;
+        width:4.4rem;
     }
     .myList ul li img{
         display: block;
-        width: 4rem;
+        width: 4.4rem;
         height: 3.93333rem;
         left: .29333rem;
         top: -1rem;
@@ -236,5 +257,12 @@
     }
     .myList li div>span{
         color:red;
+    }
+    .itemName{
+        width:4.4rem;
+        height:0.44rem;
+        white-space:nowrap;
+        overflow:hidden;
+        text-overflow:ellipsis;
     }
 </style>
