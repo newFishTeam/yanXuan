@@ -23,7 +23,7 @@ const routes = [
         {path: '/classify2/:id:idMini' , component: Classify2 }
     ]},
     { path: '/subject' , component: Subject },
-    { path: '/detail/:product:urlimg' , component: Detail }
+    { path: '/detail/:product' , component: Detail }
 ]
 
 export default new VueRouter({

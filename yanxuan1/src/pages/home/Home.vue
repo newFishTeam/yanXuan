@@ -166,12 +166,15 @@
         	},
         	showDetail (item) {
         		//listPicUrl
-        		let {listPicUrl,productPlace,promTag,name,retailPrice}=item;
-        		this.sendItem = {listPicUrl,productPlace,promTag,name,retailPrice};
-				// console.log(this.sendItem);
-        		// JSON.stringify(item)
+
+        		let {id,productPlace,simpleDesc,promTag,name,retailPrice}=item;
+
+        		this.sendItem = {id,productPlace,simpleDesc,promTag,name,retailPrice};
+
+				console.log(this.sendItem);
+        		//JSON.stringify(item)
         		this.$router.push('/detail/'+JSON.stringify(this.sendItem));
-        		console.log(JSON.stringify(this.sendItem));
+        		console.log(item);
         		
         	}
         },

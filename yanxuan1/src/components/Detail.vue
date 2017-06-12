@@ -1,22 +1,21 @@
 <template>
     <div id="detail">
         <header>
-        	<i class="dt_topMenuBtn"></i>
+        	<i class="dt_topMenuBtn" @click="goBack()">返回</i>
         	<div class="dt_topRight">
         		<i class="dt_topSearch"></i>
-        		<i class="dt_topCart"></i>
+        		<i class="dt_topCart">1</i>
         	</div>
         </header>
-        <h2>详细页测试</h2>
 		<div class="dt_info">
 			<div class="dt_img">
 				<img src=""/>	
 			</div>
 			<div class="dt_desc">
 				<div class="dtd_left">
-					<p class="pd_name"></p>
-					<p class="pd_desc"></p>
-					<p class="pd_price"></p>
+					<p class="pd_name">{{ pd.name }}</p>
+					<p class="pd_desc">{{ pd.simpleDesc }}</p>
+					<p class="pd_price">{{ pd.retailPrice }}</p>
 					<p class="pd_made"></p>
 				</div>
 				<div class="dtd_right">
@@ -28,7 +27,7 @@
 		</div>
 		<footer>
 			<div class="dt_service">
-				
+				联系客服
 			</div>
 			<div class="dt_buyNow">
 				立即购买
@@ -44,14 +43,15 @@
     export default{
     	data (){
     		return{
-    			pd:this.$route.params.product,
-    			imgurl:this.$route.params.urlimg
+    			pd:{...JSON.parse(this.$route.params.product)}
+    		}
+    	},
+    	methods:{
+    		goBack () {
+    			history.back();
     		}
     	},
         created () {
-        	console.log("44444444444");
-        	console.log(this.pd);
-        	console.log(this.imgurl);
         }
        
     }
@@ -59,6 +59,8 @@
 
 <style lang="less">
  	#detail{
+ 		font-size:.32rem;
+ 		background:#fff;
  		position: absolute;
  		top:0;
  		left: 0;
@@ -66,20 +68,56 @@
  		bottom: 0;
  		z-index: 100;
  		header{
+ 			height: 1.16rem;
+ 			line-height:1.16rem;
  			position: fixed;
  			top:0;
 	 		left: 0;
 	 		right: 0;
 	 		z-index: 101;
 	 		border-bottom: 1px solid #E9E9E9;
+	 		.dt_topRight{
+	 			position:absolute;
+	 			top:0px;
+	 			right:0px;
+	 		}
+	 		.dt_topCart{
+	 			color:#fff;
+	 			text-align:center;
+	 			display:block;
+	 			width:20px;
+	 			height:20px;
+	 			line-height:20px;
+	 			border-radius:10px;
+	 			background:#B4282D;
+	 		}
+ 		}
+ 		.dt_info{
+ 			margin:1.16rem 0 0 0;
  		}
  		footer{
+ 			height: 1.38667rem;
+ 			line-height:1.38667rem;
  			position: fixed;
+ 			text-align:center;
  			bottom:0;
 	 		left: 0;
 	 		right: 0;
 	 		z-index: 101;
 	 		border-top:1px solid #C7C7C7;
+	 		display:flex;
+	 		div{
+	 			border-left:1px solid #C7C7C7;
+	 		}
+	 		.dt_service{
+				width:2.08rem;
+	 		}
+	 		.dt_buyNow{
+				flex:1;
+	 		}
+	 		.dt_addToCart{
+				flex:1;
+	 		}
  		}
  	}
 </style>
